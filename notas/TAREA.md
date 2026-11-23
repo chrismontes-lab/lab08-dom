@@ -130,3 +130,7 @@ renderizarTareas();
 La clase `Tarea` utiliza los atributos `descripcion` y `completada` para almacenar el contenido y el estado de cada tarea.
 
 El método `crearElemento()` permite representar cada objeto en la página mediante elementos HTML creados con `createElement()`. De esta manera, se facilita la organización y reutilización del código.
+
+## Captura del resultado
+
+![Lista de tareas funcionando en GitHub Pages](../capturas/Tarea.png)
