@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi lista de tareas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 8px;
+            width: 65%;
+        }
+
+        button {
+            padding: 8px;
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .completada {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mi lista de tareas</h1>
+
+    <form id="formTarea">
+        <input
+            type="text"
+            id="descripcion"
+            placeholder="Escribe una tarea"
+            required
+        >
+        <button type="submit">Agregar</button>
+    </form>
+
+    <p id="contador">Tareas registradas: 0</p>
+
+    <ul id="listaTareas"></ul>
+
+    <p id="mensaje"></p>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
